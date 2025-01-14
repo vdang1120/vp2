@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "About Us",
 };
 
-export default function about() {
+export default function About() {
   return (
     <section className="mt-20">
       <PageLabel text="About Vision Palace" />
@@ -55,7 +55,7 @@ export default function about() {
             <div className="text-lg">Dr. Ly Phan is a trained and qualified optometrist who
               is dedicated to delivering quality eyecare to all of his patients. He received
               his Doctor of Optometry from the University of Houston in 2007. As a therapeutic
-              optometrist, Dr. Phan prioritzes the health and wellness of each patient's eyes.
+              optometrist, Dr. Phan prioritzes the health and wellness of each patient&apos;s eyes.
             </div>
           </div>
         </div>

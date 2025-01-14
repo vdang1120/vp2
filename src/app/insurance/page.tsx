@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Insurance Information",
 };
 
-export default function insurance() {
+export default function Insurance() {
   return (
     <section className="mt-20">
       <Head>
@@ -19,8 +19,8 @@ export default function insurance() {
       </div>
       <div className="flex flex-col justify-center items-center gap-8 pb-16 pt-8">
         <div className="text-xl font-semibold px-12">
-          <p>If you're unsure whether we accept your insurance or vision plan, please give us a call. Our team is here to help with any questions.</p>
-          <p>It's important to ensure your benefits before scheduling your next exam.</p>
+          <p>If you&apos;re unsure whether we accept your insurance or vision plan, please give us a call. Our team is here to help with any questions.</p>
+          <p>It&apos;s important to ensure your benefits before scheduling your next exam.</p>
         </div>
         <div className="text-3xl font-bold">Commonly Accepted Plans</div>
         <Image

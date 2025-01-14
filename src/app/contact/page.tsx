@@ -6,8 +6,9 @@ import emailjs from '@emailjs/browser';
 import { useRef, useEffect } from 'react';
 import Swal from 'sweetalert2'
 import { FaUser, FaPhone } from "react-icons/fa";
+import Script from "next/script";
 
-export default function contact() {
+export default function Contact() {
   const form = useRef(null);
   useEffect(() => {
     document.title = "Contact Us | Vision Palace";
@@ -35,6 +36,7 @@ export default function contact() {
           form.current.reset();
         },
         (error) => {
+          console.error("EmailJS Error:", error);
           Swal.fire({
             icon: "error",
             title: "Something Went Wrong",
@@ -46,7 +48,7 @@ export default function contact() {
   };
   return (
     <section className="mt-20">
-      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <Script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></Script>
       <PageLabel text="Schedule an Appointment Today" />
       <div className="bg-darkvp w-full p-4 px-6 sm:px-20 lg:pl-36 flex justify-center items-center text-white text-lg sm:text-2xl font-semibold">
         Contact Vision Palace to schedule an appointment or to request any additional information regarding our services.
