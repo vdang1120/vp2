@@ -77,7 +77,7 @@ export default function Contact() {
         <div className="hidden md:block h-vh w-px bg-gradient-to-b from-white from-20% via-gray-300 to-white to-80%"></div>
         <div className="w-full flex flex-col items-center py-12 px-8 md:px-20">
           <p className="text-3xl font-bold mb-8">Contact Us</p>
-          <Form ref={form} onSubmit={sendEmail} className="w-full flex flex-col gap-4">
+          <Form action="" ref={form} onSubmit={sendEmail} className="w-full flex flex-col gap-4">
             <div className="flex gap-4">
               <input type="text" name="first" className="w-full p-1 px-2 border-b border-gray-300 focus:border-black outline-0" placeholder="First Name" required />
               <input type="text" name="last" className="w-full p-1 px-2 border-b border-gray-300 focus:border-black outline-0" placeholder="Last Name" required />
