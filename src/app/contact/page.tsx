@@ -9,7 +9,7 @@ import { FaUser, FaPhone } from "react-icons/fa";
 import Script from "next/script";
 
 export default function Contact() {
-  const form = useRef(null);
+  const form = useRef<HTMLFormElement | null>(null);
   useEffect(() => {
     document.title = "Contact Us | Vision Palace";
   }, []);
