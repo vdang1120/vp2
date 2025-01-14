@@ -14,7 +14,7 @@ export default function Contact() {
     document.title = "Contact Us | Vision Palace";
   }, []);
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!form.current) return;
 
