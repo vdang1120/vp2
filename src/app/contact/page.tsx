@@ -33,7 +33,10 @@ export default function Contact() {
             icon: "success",
             confirmButtonColor: "mediumseagreen",
           });
-          form.current.reset();
+          if (form.current) {
+            form.current.reset();
+          }
+
         },
         (error) => {
           console.error("EmailJS Error:", error);
